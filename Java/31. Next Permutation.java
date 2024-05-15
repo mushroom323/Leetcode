@@ -2,6 +2,10 @@ package Java;
 
 import java.util.Arrays;
 
+/*
+ * 简单来说就是，找到左边第一个要被更改的元素，然后在该元素的右边找到比该元素大的最小元素进行交换，然后对该元素的右侧进行排序。
+ * 要被更改的元素，可以理解为位置为i，然后nums[i]<nums[i+1]。
+ */
 class Solution {
     public void swap(int[] nums, int i, int j) {
         int tmp = nums[i];
