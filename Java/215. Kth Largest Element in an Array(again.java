@@ -6,7 +6,7 @@ class Solution {
     public int findKthLargest(int[] nums, int k) {
         int heapSize = nums.length;
         Heapify(nums, heapSize);
-        for (int i = 1; i < k; i++) {
+for (int i = 1; i < k; i++) {
             int index = nums.length - i;
             System.out.println(nums[0]);
             swap(nums, 0, index);
@@ -39,3 +39,10 @@ class Solution {
         nums[j] = tmp;
     }
 }
+
+
+/*
+0 1 2 3 4
+
+[1, 5]
+ */
